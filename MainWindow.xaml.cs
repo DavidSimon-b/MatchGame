@@ -39,7 +39,7 @@ namespace MatchGame
             if (matchesFound == 8)
             {
                 timer.Stop();
-                timeTextBlock.Text = timeTextBlock.Text + " - Jogar novamente?";
+                timeTextBlock.Text = timeTextBlock.Text + " - Play Again?";
             }
         }
 
@@ -102,7 +102,7 @@ namespace MatchGame
 
         private void TimeTextBlock_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            //Reinicia o jogo quando todos os pares forem encontrados
+            //Restart the game after all matches were found
             if (matchesFound == 8)
             {
                 SetUpGame();
